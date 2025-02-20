@@ -4,7 +4,7 @@ import java.util.Scanner;
 import produto.util.Cores;
 import produto.model.Bolsa;
 import produto.model.Camiseta;
-import produto.model.Produto;
+//import produto.model.Produto;
 
 
 

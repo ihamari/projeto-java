@@ -2,6 +2,9 @@ package produto;
 
 import java.util.Scanner;
 import produto.util.Cores;
+import produto.model.Bolsa;
+import produto.model.Camiseta;
+import produto.model.Produto;
 
 
 
@@ -10,6 +13,32 @@ public class Menu {
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 		int opcao;
+		
+		// ***********************************************TESTES**********************************************/
+//		Produto p1 = new Produto(1, "Tênis Nike Just don't", "00012364", "42", "branco", "Naike", 20.0f, 5);
+//		p1.reporEstoque(-2); // inválido
+//		p1.reporEstoque(2); // 7
+//		p1.visualizarProduto();
+//		p1.compra(-2);// valor inválido
+//		p1.compra(15);// Estoque insuficiente
+//		p1.compra(3);// 4
+//		p1.visualizarProduto();
+		
+		Camiseta p2 = new Camiseta(2, "Camiseta Adidas real de verdade", "00022364","M","preto", "Adidaz",20.0f,5,"v","curta");
+		p2.visualizarProduto();
+		p2.reporEstoque(-2); // inválido
+		p2.reporEstoque(2); // 7
+		p2.visualizarProduto();
+		p2.compra(-2);// valor inválido
+		p2.compra(15);// Estoque insuficiente
+		p2.compra(3);// 4
+		p2.visualizarProduto();
+		
+		
+		Bolsa p3 = new Bolsa(3, "Bolsa Louis Vuitton", "000315648", "30 x 10 x 25 cm ", "marrom", "Luíz Vitão", 35.99f, 2, 3, "carteiro");
+		p3.visualizarProduto();
+		
+		
 		
 		while(true) {
 			System.out.println(Cores.TEXT_YELLOW_BOLD + Cores.ANSI_BLACK_BACKGROUND

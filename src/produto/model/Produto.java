@@ -143,9 +143,8 @@ public abstract class Produto {
 	public void visualizarProduto() {
 		
 		System.out.println("\n\n***********************************************************");
-		System.out.println("Dados do Produto:");
+		System.out.println("PRODUTO - ID:"+ this.idProduto);
 		System.out.println("***********************************************************");
-		System.out.println("id Produto: " + this.idProduto);
 		System.out.println("Nome do Produto: " + nome);
 		System.out.println("Código de Barras: " + this.codigoDeBarras);
 		System.out.println("Marca: " + this.marca);
@@ -153,12 +152,5 @@ public abstract class Produto {
 		System.out.println("Estoque: " + this.estoque);
 		
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 }

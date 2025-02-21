@@ -5,7 +5,7 @@ public interface ProdutoRepository {
 	
 	// CRUD Produto
 	public void procurarPorId(int numero);
-	public void listarTodosProdutoa();
+	public void listarTodosProdutos();
 	public void cadastrar (Produto produto);
 	public void atualizar (Produto produto);
 	public void deletar (int numero);
